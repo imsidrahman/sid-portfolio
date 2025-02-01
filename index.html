@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sid Rahman's Video Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Sid Rahman's Video Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="videos">
+    <h2>Video Gallery</h2>
+    <div class="video-section">
+      <h3>Embedded Videos</h3>
+      <div class="video-container">
+        <!-- Replace VIDEO_ID with your YouTube video ID -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="video-section">
+      <h3>Direct Upload</h3>
+      <p>If you have a video file hosted on your server, you can display it here:</p>
+      <div class="video-container">
+        <!-- Replace "your-video.mp4" with the path to your video file -->
+        <video width="560" height="315" controls>
+          <source src="your-video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>
+      Feel free to get in touch via email or follow me on social media:
+    </p>
+    <ul>
+      <li>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></li>
+      <li>Instagram: <a href="https://instagram.com/yourprofile" target="_blank">yourprofile</a></li>
+      <li>Twitter: <a href="https://twitter.com/yourprofile" target="_blank">yourprofile</a></li>
+      <li>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">yourprofile</a></li>
+    </ul>
+    <!-- Contact Form using Formspree (optional) -->
+    <form id="contact-form" action="https://formspree.io/f/{your-form-id}" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sid Rahman. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
